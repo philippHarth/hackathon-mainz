@@ -23,7 +23,7 @@ Optional: manually install a [CuPy version](https://docs.cupy.dev/en/stable/inst
 pip install cupy-cuda12x==13.2.0
 ```
 ### Create Python Environment for Synapse Data Preprocessing (optional) 
-Requires [cuDF](https://github.com/rapidsai/cudf), which has extended GPU hardware requirements; please adjust for your local GPU setup.
+Requires [cuDF](https://github.com/rapidsai/cudf), which has extended GPU hardware requirements, **only supported under linux**; please adjust for your local GPU setup.
 ```
 cd <path-to-repository>
 conda create -n preproc python=3.11
