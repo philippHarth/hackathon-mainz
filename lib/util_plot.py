@@ -130,7 +130,7 @@ def initPlotSettings(spines_top_right = False, font_size=7, legend_font_size=7):
 
     mpl.rcParams["figure.max_open_warning"] = 0
     
-    mpl.use("cairo")
+    #mpl.use("cairo")
 
 def set_linewidth(ax):
     ax.spines['top'].set_linewidth(LINEWIDTH)    # Top spine

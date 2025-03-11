@@ -303,7 +303,7 @@ class ConnectomeMatrixAnalyzer:
         mpl.rcParams["mathtext.default"] = "regular"
         mpl.rcParams["figure.max_open_warning"] = 0
         
-        mpl.use("cairo")
+        #mpl.use("cairo")
         
         def get_minortick_locations(meta, markers):
             locations = []
