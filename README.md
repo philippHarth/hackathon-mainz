@@ -15,8 +15,8 @@ pip install -U -r requirements-win.txt
 ```
 Register the conda environment with **ipykernel** to use it from within Jupyter notebooks:
 ```
-conda activate connectomedf:
-python -m ipykernel install --user --name i --display-name "connectomedf"
+conda activate hackathon:
+python -m ipykernel install --user --name i --display-name "hackathon"
 ```
 Optional: manually install a [CuPy version](https://docs.cupy.dev/en/stable/install.html) that matches your local GPU setup, e.g.:
 ```
