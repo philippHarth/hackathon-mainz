@@ -6,21 +6,21 @@
 - Tested on a Linux system with **NVIDIA GeForce RTX 4080 (16GB)** 
 - The recommended way of setting up your local Python environments is using [conda](https://docs.conda.io/projects/conda/en/stable/user-guide/index.html).
 
-### Create Main Python Environment 
+### Create Minimal Python Environment 
 ```
 cd <path-to-repository>
-conda create -n connectomedf python=3.11
-conda activate connectomedf
-pip install -r requirements.txt
-```
-Manually install a [CuPy version](https://docs.cupy.dev/en/stable/install.html) that matches your local GPU setup, e.g.:
-```
-pip install cupy-cuda12x==13.2.0
+conda create -n hackathon python=3.11
+conda activate hackathon
+pip install -U -r requirements-win.txt
 ```
 Register the conda environment with **ipykernel** to use it from within Jupyter notebooks:
 ```
 conda activate connectomedf:
 python -m ipykernel install --user --name i --display-name "connectomedf"
+```
+Optional: manually install a [CuPy version](https://docs.cupy.dev/en/stable/install.html) that matches your local GPU setup, e.g.:
+```
+pip install cupy-cuda12x==13.2.0
 ```
 ### Create Python Environment for Synapse Data Preprocessing (optional) 
 Requires [cuDF](https://github.com/rapidsai/cudf), which has extended GPU hardware requirements; please adjust for your local GPU setup.
