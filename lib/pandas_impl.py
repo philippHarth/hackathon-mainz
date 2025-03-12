@@ -225,9 +225,9 @@ class IndexData:
         return {k: v for k, v in indices.items() if k[0] != -1 and k[1] != -1}
 
 
-def compile_index_data(eval_folder, df_synapses_indexed):
+def compile_index_data(eval_folder, df_synapses_indexed, recompute=False):
     index_file = eval_folder / 'index_data.pkl'
-    if index_file.exists():
+    if index_file.exists() and not recompute:
         with open(index_file, 'rb') as file:
             index_data = pickle.load(file)
         return index_data

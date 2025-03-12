@@ -418,7 +418,7 @@ class ConnectomeMatrixAnalyzer:
             y = 0.93
             plt.text(x, y, title, transform=fig.transFigure, va='center')
         
-        def write_selections_info(meta, max = 8):
+        def write_selections_info(meta, max = 7):
             
             def get_annotations(nesting_level):
                 if(nesting_level > len(meta["attributes"])):
